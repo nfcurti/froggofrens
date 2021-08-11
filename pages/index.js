@@ -1,8 +1,11 @@
 import Head from 'next/head'
+import { useEffect, useState } from "react";
 import Image from 'next/image'
 import styles from '../styles/Home.module.css'
 
 export default function Home() {
+  const [userAddress, setUserAddress] = useState('CONNECT');
+  const [mintAmount, setMintAmount] = useState(10);
   return (
     <div className={styles.container}>
       <Head>
@@ -27,7 +30,7 @@ export default function Home() {
       <main className={styles.main}>
           <div className={styles.main_hero}>
             <img className={styles.main_hero_img} src='/assets/hero_img.svg'/>
-            <button>CONNECT</button>
+            <button>{userAddress}</button>
             <p>Connecc to buy fren<br/>0.069 ETH</p>
           </div>
           <div className={styles.about}>
@@ -70,6 +73,18 @@ export default function Home() {
             </div>
           </div>
           <div className={styles.section1}>
+                <h1>Mint your own fren!</h1>
+                <h6>0/1001 minted</h6>
+                <div className={styles.section1_wrapper}>
+                <p onClick={() => {
+                  if(mintAmount>1){setMintAmount(mintAmount-1)}
+                }}>-</p>
+                <p>{mintAmount}</p>
+                <p onClick={() => {
+                  if(mintAmount<10){setMintAmount(mintAmount+1)}
+                }}>+</p>
+                </div>
+                <button>MINT {mintAmount} FRENS</button>
           </div>
           <div className={styles.gallery}>
             <div className={styles.gallery_item}></div>

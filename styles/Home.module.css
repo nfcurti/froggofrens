@@ -205,10 +205,70 @@ margin-top:3%;
 
 .section1{
   width: 70%;
-  background: #C4C4C4;
-  height: 10em;
+  height: auto;
   display: block;
   margin:5% auto;
+  text-align: center
+}
+
+.section1 h6{
+  margin-top: -2em
+}
+
+.section1 button{
+
+  background: #30B077;
+border-radius: 24px;
+border:none;
+padding: 1em 3em;
+font-size: 25px;
+font-weight: 400;
+color: white;
+font-family:"Comic Sans MS";
+display: block;
+margin:auto;
+margin-top:3%;
+}
+
+.section1 button:hover{
+  opacity: 0.9;
+  cursor: pointer
+}
+
+.section1_wrapper{
+display: flex;
+    text-align: center;
+    width: 25%;
+    height: 110px;
+    margin: auto;
+}
+
+.section1_wrapper p{
+  font-size: 30px;
+  text-align: center;
+
+}
+.section1_wrapper p:nth-of-type(3){
+      display: inline-table;
+  content: "-";
+  width: 5px;
+  margin-left: 1em;
+}
+.section1_wrapper p:nth-of-type(1){
+      display: inline-table;
+  content: "+";
+  width: 13px;
+  margin-right: 1em
+}
+.section1_wrapper p:nth-of-type(2n+1){
+  border:1px solid white;
+  padding:0em 25px;
+  border-radius: 50%;
+}
+.section1_wrapper p:nth-of-type(2n+1):hover{
+  cursor: pointer;
+  background: white;
+  color: black
 }
 
 .gallery{
