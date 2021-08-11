@@ -5,7 +5,7 @@ import styles from '../styles/Home.module.css'
 
 export default function Home() {
   const [userAddress, setUserAddress] = useState('CONNECT');
-  const [mintAmount, setMintAmount] = useState(10);
+  const [mintAmount, setMintAmount] = useState(1);
   return (
     <div className={styles.container}>
       <Head>
