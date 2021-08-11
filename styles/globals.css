@@ -2,7 +2,7 @@ html,
 body {
   padding: 0;
   margin: 0;
-  font-family: "Comic Sans MS", "Comic Sans", cursive;
+  font-family: "Comic Sans MS", "Comic Sans", "Comic Sans";
   overflow-x: hidden
 }
 
@@ -20,5 +20,7 @@ ul > li {
     /* You can also add some margins here to make it look prettier */
     zoom:1;
     *display:inline;
+        text-align: end;
+    padding-right: 10px;
     /* this fix is needed for IE7- */
 }

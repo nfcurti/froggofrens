@@ -286,4 +286,14 @@ margin-top:3%;
   .main_hero{
     height: auto
   }
+
+  .navbar{
+    width: auto;
+  }
+
+  .navbar_social{
+    width: auto !important;
+    left: -3%;
+    top: 100%;
+  }
 }
